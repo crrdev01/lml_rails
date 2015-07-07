@@ -7,6 +7,13 @@
   background: white;
 }
 
+.pagination-directional-button {
+  border-radius: 3px;
+  padding: 5px 10px;
+  color: white;
+  background: #377bb5;
+}
+
 .story-pagination {
   padding: 50px 0px 100px 0px;
 
@@ -14,18 +21,12 @@
     margin: 0px 5px;
   }
   .previous_page {
-    border-radius: 3px;
-    padding: 5px 10px;
-    color: white;
-    background: #377bb5;
+    @extend .pagination-directional-button;
     margin-right: 20px;
   }
 
   .next_page {
-    border-radius: 3px;
-    padding: 5px 10px;
-    color: white;
-    background: #377bb5;
+    @extend .pagination-directional-button;
     margin-left: 20px;
   }
 }
