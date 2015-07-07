@@ -3,11 +3,10 @@
   <% @stories.each_with_index do |story, index| %>
   <div class="story">
     <div class="description">
-      <%= index %>
       <%= story.description %>
     </div>
     <div>
-      <%= link_to 'I agree, your life sucks', '#', id: "hello-#{index}", onclick: "confirmFml('hello-#{index}')" %>
+      <%= link_to 'I agree, your life sucks', '#', id: "agree-button-#{index}", onclick: "confirmFml('agree-button-#{index}')" %>
     </div>
   </div>
   <% end %>
