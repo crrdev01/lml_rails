@@ -1,0 +1,31 @@
+.story {
+  font-size: 14px;
+  border: 1px solid #C0C0C0;
+  margin: 10px 0px;
+  padding: 10px;
+  border-radius: 5px;
+  background: white;
+}
+
+.story-pagination {
+  padding: 50px 0px 100px 0px;
+
+  a {
+    margin: 0px 5px;
+  }
+  .previous_page {
+    border-radius: 3px;
+    padding: 5px 10px;
+    color: white;
+    background: #377bb5;
+    margin-right: 20px;
+  }
+
+  .next_page {
+    border-radius: 3px;
+    padding: 5px 10px;
+    color: white;
+    background: #377bb5;
+    margin-left: 20px;
+  }
+}

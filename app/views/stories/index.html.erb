@@ -1,0 +1,25 @@
+<div class="row">
+<% @stories.each_with_index do |story, index| %>
+<div class="medium-8 columns">
+  <div class="story">
+    <div class="description">
+      <%= index %>
+      <%= story.description %>
+    </div>
+    <div>
+      <%= link_to 'I agree, your life sucks', '#', id: "hello-#{index}", onclick: "confirmFml('hello-#{index}')" %>
+    </div>
+  </div>
+</div>
+<% end %>
+<div class="medium-4 columns">
+  &nbsp;
+</div>
+</div>
+<div class="row">
+  <div class="small-12 columns">
+    <div class="story-pagination">
+      <%= will_paginate @tutorials, previous_label: "Previous", next_label: "Next" %>
+    </div>
+  </div>
+</div>
