@@ -1,6 +1,6 @@
 <div class="row">
-<% @stories.each_with_index do |story, index| %>
 <div class="medium-8 columns">
+  <% @stories.each_with_index do |story, index| %>
   <div class="story">
     <div class="description">
       <%= index %>
@@ -10,10 +10,7 @@
       <%= link_to 'I agree, your life sucks', '#', id: "hello-#{index}", onclick: "confirmFml('hello-#{index}')" %>
     </div>
   </div>
-</div>
-<% end %>
-<div class="medium-4 columns">
-  &nbsp;
+  <% end %>
 </div>
 </div>
 <div class="row">
